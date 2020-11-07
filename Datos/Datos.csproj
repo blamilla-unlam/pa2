@@ -52,6 +52,7 @@
   <ItemGroup>
     <Compile Include="Connection.cs" />
     <Compile Include="MarcaDAO.cs" />
+    <Compile Include="VehiculoDAO.cs" />
     <Compile Include="ModeloDAO.cs" />
     <Compile Include="ORM\ConcesionariaModel.Context.cs">
       <AutoGen>True</AutoGen>

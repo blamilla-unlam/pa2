@@ -4,3 +4,9 @@ C:\Users\p045921\Documents\UNLaM\4 - Programacion Avanzada 2\Repo\pa2\Entidades\
 C:\Users\p045921\Documents\UNLaM\4 - Programacion Avanzada 2\Repo\pa2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\p045921\Documents\UNLaM\4 - Programacion Avanzada 2\Repo\pa2\Entidades\obj\Debug\Entidades.dll
 C:\Users\p045921\Documents\UNLaM\4 - Programacion Avanzada 2\Repo\pa2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\bin\Debug\Entidades.dll
+C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
+C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.dll
+C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.pdb

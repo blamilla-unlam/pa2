@@ -113,6 +113,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Icons\Delete.png" />
+    <Content Include="Vehiculo.aspx" />
     <Content Include="Modelo.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -133,7 +134,9 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
+    <Content Include="VehiculoDelete.aspx" />
     <Content Include="ModeloDelete.aspx" />
+    <Content Include="VehiculoUpsert.aspx" />
     <Content Include="ModeloUpsert.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -171,6 +174,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="Vehiculo.aspx.cs">
+      <DependentUpon>Vehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vehiculo.aspx.designer.cs">
+      <DependentUpon>Vehiculo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Modelo.aspx.cs">
       <DependentUpon>Modelo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -196,12 +206,26 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="VehiculoDelete.aspx.cs">
+      <DependentUpon>VehiculoDelete.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VehiculoDelete.aspx.designer.cs">
+      <DependentUpon>VehiculoDelete.aspx</DependentUpon>
+    </Compile>
     <Compile Include="ModeloDelete.aspx.cs">
       <DependentUpon>ModeloDelete.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ModeloDelete.aspx.designer.cs">
       <DependentUpon>ModeloDelete.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="VehiculoUpsert.aspx.cs">
+      <DependentUpon>VehiculoUpsert.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="VehiculoUpsert.aspx.designer.cs">
+      <DependentUpon>VehiculoUpsert.aspx</DependentUpon>
     </Compile>
     <Compile Include="ModeloUpsert.aspx.cs">
       <DependentUpon>ModeloUpsert.aspx</DependentUpon>
