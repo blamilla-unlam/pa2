@@ -15,9 +15,9 @@ namespace Entidades
         public int NumeroCarroceria { get; set; }
         public string Patente { get; set; }
         public short NumeroPuertas { get; set; }
-        public int Color { get; set; }
-        public int Caja { get; set; }
+        public int ColorID { get; set; }
+        public int CajaID { get; set; }
         public decimal Cilindrada { get; set; }
-        public int Tapizado { get; set; }
+        public int TapizadoID { get; set; }
     }
 }

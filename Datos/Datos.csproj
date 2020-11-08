@@ -52,6 +52,24 @@
   <ItemGroup>
     <Compile Include="Connection.cs" />
     <Compile Include="MarcaDAO.cs" />
+    <Compile Include="ORM\Caja.cs">
+      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\Color.cs">
+      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\Marca.cs">
+      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\Modelo.cs">
+      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\Tapizado.cs">
+      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ORM\Vehiculo.cs">
+      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="VehiculoDAO.cs" />
     <Compile Include="ModeloDAO.cs" />
     <Compile Include="ORM\ConcesionariaModel.Context.cs">
@@ -68,15 +86,6 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ConcesionariaModel.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Marca.cs">
-      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Modelo.cs">
-      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
-    </Compile>
-    <Compile Include="ORM\Vehiculo.cs">
-      <DependentUpon>ConcesionariaModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

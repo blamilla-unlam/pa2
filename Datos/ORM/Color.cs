@@ -12,18 +12,18 @@ namespace Datos.ORM
     using System;
     using System.Collections.Generic;
     
-    public partial class Marca
+    public partial class Color
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public Marca()
+        public Color()
         {
-            this.Modelo = new HashSet<Modelo>();
+            this.Vehiculo = new HashSet<Vehiculo>();
         }
     
-        public int MarcaID { get; set; }
+        public int ColorID { get; set; }
         public string Nombre { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<Modelo> Modelo { get; set; }
+        public virtual ICollection<Vehiculo> Vehiculo { get; set; }
     }
 }

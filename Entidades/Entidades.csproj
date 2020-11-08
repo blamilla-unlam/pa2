@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Tapizado.cs" />
+    <Compile Include="Caja.cs" />
+    <Compile Include="Color.cs" />
     <Compile Include="Marca.cs" />
     <Compile Include="Vehiculo.cs" />
     <Compile Include="Modelo.cs" />

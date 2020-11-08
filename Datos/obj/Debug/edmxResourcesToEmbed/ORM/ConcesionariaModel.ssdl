@@ -1,5 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="ConcesionariaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Caja">
+    <Key>
+      <PropertyRef Name="CajaID" />
+    </Key>
+    <Property Name="CajaID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Color">
+    <Key>
+      <PropertyRef Name="ColorID" />
+    </Key>
+    <Property Name="ColorID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="Marca">
     <Key>
       <PropertyRef Name="MarcaID" />
@@ -15,6 +29,13 @@
     <Property Name="MarcaID" Type="int" Nullable="false" />
     <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
   </EntityType>
+  <EntityType Name="Tapizado">
+    <Key>
+      <PropertyRef Name="TapizadoID" />
+    </Key>
+    <Property Name="TapizadoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nombre" Type="varchar" MaxLength="50" Nullable="false" />
+  </EntityType>
   <EntityType Name="Vehiculo">
     <Key>
       <PropertyRef Name="VehiculoID" />
@@ -25,10 +46,10 @@
     <Property Name="NumeroCarroceria" Type="int" Nullable="false" />
     <Property Name="Patente" Type="varchar" MaxLength="7" Nullable="false" />
     <Property Name="NumeroPuertas" Type="smallint" Nullable="false" />
-    <Property Name="Color" Type="int" Nullable="false" />
-    <Property Name="Caja" Type="int" Nullable="false" />
+    <Property Name="ColorID" Type="int" Nullable="false" />
+    <Property Name="CajaID" Type="int" Nullable="false" />
     <Property Name="Cilindrada" Type="decimal" Precision="18" Scale="2" Nullable="false" />
-    <Property Name="Tapizado" Type="int" Nullable="false" />
+    <Property Name="TapizadoID" Type="int" Nullable="false" />
   </EntityType>
   <Association Name="FK_Modelo_Marca">
     <End Role="Marca" Type="Self.Marca" Multiplicity="1" />
@@ -39,6 +60,30 @@
       </Principal>
       <Dependent Role="Modelo">
         <PropertyRef Name="MarcaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehiculo_Caja">
+    <End Role="Caja" Type="Self.Caja" Multiplicity="1" />
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Caja">
+        <PropertyRef Name="CajaID" />
+      </Principal>
+      <Dependent Role="Vehiculo">
+        <PropertyRef Name="CajaID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Vehiculo_Color">
+    <End Role="Color" Type="Self.Color" Multiplicity="1" />
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Color">
+        <PropertyRef Name="ColorID" />
+      </Principal>
+      <Dependent Role="Vehiculo">
+        <PropertyRef Name="ColorID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -54,16 +99,43 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
+  <Association Name="FK_Vehiculo_Tapizado">
+    <End Role="Tapizado" Type="Self.Tapizado" Multiplicity="1" />
+    <End Role="Vehiculo" Type="Self.Vehiculo" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Tapizado">
+        <PropertyRef Name="TapizadoID" />
+      </Principal>
+      <Dependent Role="Vehiculo">
+        <PropertyRef Name="TapizadoID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="ConcesionariaModelStoreContainer">
+    <EntitySet Name="Caja" EntityType="Self.Caja" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Color" EntityType="Self.Color" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Marca" EntityType="Self.Marca" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Modelo" EntityType="Self.Modelo" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Tapizado" EntityType="Self.Tapizado" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="Vehiculo" EntityType="Self.Vehiculo" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_Modelo_Marca" Association="Self.FK_Modelo_Marca">
       <End Role="Marca" EntitySet="Marca" />
       <End Role="Modelo" EntitySet="Modelo" />
     </AssociationSet>
+    <AssociationSet Name="FK_Vehiculo_Caja" Association="Self.FK_Vehiculo_Caja">
+      <End Role="Caja" EntitySet="Caja" />
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehiculo_Color" Association="Self.FK_Vehiculo_Color">
+      <End Role="Color" EntitySet="Color" />
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+    </AssociationSet>
     <AssociationSet Name="FK_Vehiculo_Modelo" Association="Self.FK_Vehiculo_Modelo">
       <End Role="Modelo" EntitySet="Modelo" />
+      <End Role="Vehiculo" EntitySet="Vehiculo" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Vehiculo_Tapizado" Association="Self.FK_Vehiculo_Tapizado">
+      <End Role="Tapizado" EntitySet="Tapizado" />
       <End Role="Vehiculo" EntitySet="Vehiculo" />
     </AssociationSet>
   </EntityContainer>

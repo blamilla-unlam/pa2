@@ -19,10 +19,10 @@ namespace Datos
                     NumeroCarroceria = s.NumeroCarroceria,
                     Patente = s.Patente,
                     NumeroPuertas = s.NumeroPuertas,
-                    Color = s.Color,
-                    Caja = s.Caja,
+                    ColorID = s.ColorID,
+                    CajaID = s.CajaID,
                     Cilindrada = s.Cilindrada,
-                    Tapizado = s.Tapizado })
+                    TapizadoID = s.TapizadoID })
                 .OrderBy(o => new { o.NumeroChasis, o.NumeroCarroceria })
                 .ToList();
         }
@@ -38,10 +38,10 @@ namespace Datos
                     NumeroCarroceria = s.NumeroCarroceria,
                     Patente = s.Patente,
                     NumeroPuertas = s.NumeroPuertas,
-                    Color = s.Color,
-                    Caja = s.Caja,
+                    ColorID = s.ColorID,
+                    CajaID = s.CajaID,
                     Cilindrada = s.Cilindrada,
-                    Tapizado = s.Tapizado
+                    TapizadoID = s.TapizadoID
                 })
                 .Where(w => w.VehiculoID.Equals(VehiculoID))
                 .FirstOrDefault();
@@ -66,10 +66,10 @@ namespace Datos
                 vehiculo.NumeroCarroceria = Vehiculo.NumeroCarroceria;
                 vehiculo.Patente = Vehiculo.Patente;
                 vehiculo.NumeroPuertas= Vehiculo.NumeroPuertas;
-                vehiculo.Color = Vehiculo.Color;
-                vehiculo.Caja = Vehiculo.Caja;
+                vehiculo.ColorID = Vehiculo.ColorID;
+                vehiculo.CajaID = Vehiculo.CajaID;
                 vehiculo.Cilindrada = Vehiculo.Cilindrada;
-                vehiculo.Tapizado = Vehiculo.Tapizado;
+                vehiculo.TapizadoID = Vehiculo.TapizadoID;
 
                 Contexto.SaveChanges();
             }
