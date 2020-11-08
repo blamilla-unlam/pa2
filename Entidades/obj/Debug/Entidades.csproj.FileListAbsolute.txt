@@ -10,3 +10,8 @@ C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entid
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.csproj.CoreCompileInputs.cache
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.dll
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.pdb
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Entidades\bin\Debug\Entidades.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Entidades\obj\Debug\Entidades.pdb

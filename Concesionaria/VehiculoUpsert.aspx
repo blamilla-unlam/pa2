@@ -4,13 +4,22 @@
     <h2>Vehículos - Actualización</h2>
     <p>Use this area to provide additional information.</p>
     <div>
-        <asp:Label ID="lblMarca" runat="server">Nombre</asp:Label>
+        <asp:Label ID="lblMarca" runat="server">Marca</asp:Label>
         <asp:DropDownList ID="ddlMarca" runat="server"></asp:DropDownList>
     </div>
     <div>
         <asp:Label ID="lblModelo" runat="server">Modelo</asp:Label>
-        <asp:TextBox ID="txtModelo" runat="server" MaxLength="50"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="rfvModelo" runat="server" ErrorMessage="Campo obligatorio" ControlToValidate="txtModelo" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+        <asp:DropDownList ID="ddlModelo" runat="server"></asp:DropDownList>
+    </div>
+    <div>
+        <asp:Label ID="lblChasis" runat="server">Número de Chasis</asp:Label>
+        <asp:TextBox ID="txtChasis" runat="server" MaxLength="50"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfvChasis" runat="server" ErrorMessage="Campo obligatorio" ControlToValidate="txtChasis" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+    </div>
+    <div>
+        <asp:Label ID="Label1" runat="server">Número de Chasis</asp:Label>
+        <asp:TextBox ID="TextBox1" runat="server" MaxLength="50"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Campo obligatorio" ControlToValidate="txtChasis" ForeColor="#CC0000"></asp:RequiredFieldValidator>
     </div>
     <div>
         <asp:Button ID="btnGuardar" runat="server" Text="Guardar" OnClick="btnGuardar_Click"/>

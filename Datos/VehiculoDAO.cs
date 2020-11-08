@@ -79,15 +79,15 @@ namespace Datos
         {
             var vehiculo = new ORM.Vehiculo();
             vehiculo.Modelo.MarcaID = Vehiculo.MarcaID;
-            vehiculo.ModeloID = Vehiculo.ModeloID;
-            vehiculo.NumeroChasis = Vehiculo.NumeroChasis;
-            vehiculo.NumeroCarroceria = Vehiculo.NumeroCarroceria;
-            vehiculo.Patente = Vehiculo.Patente;
-            vehiculo.NumeroPuertas = Vehiculo.NumeroPuertas;
-            vehiculo.Color = Vehiculo.Color;
-            vehiculo.Caja = Vehiculo.Caja;
-            vehiculo.Cilindrada = Vehiculo.Cilindrada;
-            vehiculo.Tapizado = Vehiculo.Tapizado;
+            //vehiculo.ModeloID = Vehiculo.ModeloID;
+            //vehiculo.NumeroChasis = Vehiculo.NumeroChasis;
+            //vehiculo.NumeroCarroceria = Vehiculo.NumeroCarroceria;
+            //vehiculo.Patente = Vehiculo.Patente;
+            //vehiculo.NumeroPuertas = Vehiculo.NumeroPuertas;
+            //vehiculo.Color = Vehiculo.Color;
+            //vehiculo.Caja = Vehiculo.Caja;
+            //vehiculo.Cilindrada = Vehiculo.Cilindrada;
+            //vehiculo.Tapizado = Vehiculo.Tapizado;
 
             Contexto.Vehiculo.Add(vehiculo);
             Contexto.SaveChanges();

@@ -26,3 +26,16 @@ C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Datos\obj\Debug\Datos.csp
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Datos\obj\Debug\Datos.csproj.CopyComplete
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Datos\obj\Debug\Datos.dll
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Datos\obj\Debug\Datos.pdb
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\Datos.dll.config
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\Datos.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\Datos.pdb
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\Entidades.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\obj\Debug\Datos.csproj.CopyComplete
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\obj\Debug\Datos.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Datos\obj\Debug\Datos.pdb

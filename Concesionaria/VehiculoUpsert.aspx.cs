@@ -10,7 +10,6 @@ namespace Concesionaria
         MarcaService ServiceMarca = new MarcaService();
 
         int VehiculoID = 0;
-        int ModeloID = 0;
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -25,9 +24,9 @@ namespace Concesionaria
 
                 if (getVehiculoID())
                 {
-                    var Modelo = ServiceModelo.ObtenerPorID(ModeloID);
+                    var Vehiculo = ServiceVehiculo.ObtenerPorID(VehiculoID);
                     //txtNombre.Text = Modelo.Nombre;
-                    ddlMarca.Items.FindByValue(Modelo.MarcaID.ToString()).Selected = true;
+                    ddlMarca.Items.FindByValue(Vehiculo.MarcaID.ToString()).Selected = true;
                 }
             }
         }
@@ -36,25 +35,25 @@ namespace Concesionaria
         {
             getVehiculoID();
 
-            Entidades.Modelo Modelo = new Entidades.Modelo();
+            Entidades.Vehiculo Vehiculo = new Entidades.Vehiculo();
 
-            if (ModeloID == 0)
+            if (VehiculoID == 0)
             {
-                Modelo.MarcaID = int.Parse(ddlMarca.SelectedValue);
+                Vehiculo.MarcaID = int.Parse(ddlMarca.SelectedValue);
                 //Modelo.Nombre = txtNombre.Text;
 
-                ServiceModelo.Insertar(Modelo);
+                ServiceVehiculo.Insertar(Vehiculo);
             }
             else
             {
-                Modelo.ModeloID = ModeloID;
-                Modelo.MarcaID = int.Parse(ddlMarca.SelectedValue);
+                Vehiculo.VehiculoID = VehiculoID;
+                Vehiculo.MarcaID = int.Parse(ddlMarca.SelectedValue);
                 //Modelo.Nombre = txtNombre.Text;
 
-                ServiceModelo.Actualizar(Modelo);
+                ServiceVehiculo.Actualizar(Vehiculo);
             }
 
-            Response.Redirect("Modelo.aspx");
+            Response.Redirect("Vehiculo.aspx");
         }
 
         private bool getVehiculoID()
