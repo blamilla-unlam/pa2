@@ -12,5 +12,24 @@ namespace Servicio
         {
             return Servicio.ObtenerMarcas();
         }
+        public Marca ObtenerPorID(int MarcaID)
+        {
+            return Servicio.ObtenerPorID(MarcaID);
+        }
+
+        public void Actualizar(Marca Marca)
+        {
+            Servicio.Actualizar(Marca);
+        }
+
+        public void Insertar(Marca Marca)
+        {
+            Servicio.Insertar(Marca);
+        }
+
+        public void Eliminar(int MarcaID)
+        {
+            Servicio.Eliminar(MarcaID);
+        }
     }
 }

@@ -112,9 +112,26 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ActualizarColor.aspx" />
+    <Content Include="ActualizarTapizado.aspx" />
+    <Content Include="ActualizarCaja.aspx" />
+    <Content Include="ActualizarMarca.aspx" />
+    <Content Include="AgregarColor.aspx" />
+    <Content Include="AgregarTapizado.aspx" />
+    <Content Include="AgregarCaja.aspx" />
+    <Content Include="AgregarMarca.aspx" />
+    <Content Include="EliminarColor.aspx" />
+    <Content Include="EliminarTapizado.aspx" />
+    <Content Include="EliminarCaja.aspx" />
+    <Content Include="EliminarMarca.aspx" />
     <Content Include="Icons\Delete.png" />
-    <Content Include="Vehiculo.aspx" />
-    <Content Include="Modelo.aspx" />
+    <Content Include="AgregarModelo.aspx" />
+    <Content Include="Cajas.aspx" />
+    <Content Include="Colores.aspx" />
+    <Content Include="Tapizados.aspx" />
+    <Content Include="Marcas.aspx" />
+    <Content Include="Vehiculos.aspx" />
+    <Content Include="Modelos.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
@@ -134,10 +151,11 @@
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
-    <Content Include="VehiculoDelete.aspx" />
-    <Content Include="ModeloDelete.aspx" />
-    <Content Include="VehiculoUpsert.aspx" />
-    <Content Include="ModeloUpsert.aspx" />
+    <Content Include="EliminarVehiculo.aspx" />
+    <Content Include="EliminarModelo.aspx" />
+    <Content Include="AgregarVehiculo.aspx" />
+    <Content Include="ActualizarVehiculo.aspx" />
+    <Content Include="ActualizarModelo.aspx" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
@@ -173,20 +191,139 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ActualizarColor.aspx.cs">
+      <DependentUpon>ActualizarColor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActualizarColor.aspx.designer.cs">
+      <DependentUpon>ActualizarColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarTapizado.aspx.cs">
+      <DependentUpon>ActualizarTapizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActualizarTapizado.aspx.designer.cs">
+      <DependentUpon>ActualizarTapizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarCaja.aspx.cs">
+      <DependentUpon>ActualizarCaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActualizarCaja.aspx.designer.cs">
+      <DependentUpon>ActualizarCaja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarMarca.aspx.cs">
+      <DependentUpon>ActualizarMarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActualizarMarca.aspx.designer.cs">
+      <DependentUpon>ActualizarMarca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarColor.aspx.cs">
+      <DependentUpon>AgregarColor.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarColor.aspx.designer.cs">
+      <DependentUpon>AgregarColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarTapizado.aspx.cs">
+      <DependentUpon>AgregarTapizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarTapizado.aspx.designer.cs">
+      <DependentUpon>AgregarTapizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarCaja.aspx.cs">
+      <DependentUpon>AgregarCaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarCaja.aspx.designer.cs">
+      <DependentUpon>AgregarCaja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AgregarMarca.aspx.cs">
+      <DependentUpon>AgregarMarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AgregarMarca.aspx.designer.cs">
+      <DependentUpon>AgregarMarca.aspx</DependentUpon>
+    </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
-    <Compile Include="Vehiculo.aspx.cs">
-      <DependentUpon>Vehiculo.aspx</DependentUpon>
+    <Compile Include="AgregarModelo.aspx.cs">
+      <DependentUpon>AgregarModelo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Vehiculo.aspx.designer.cs">
-      <DependentUpon>Vehiculo.aspx</DependentUpon>
+    <Compile Include="AgregarModelo.aspx.designer.cs">
+      <DependentUpon>AgregarModelo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Modelo.aspx.cs">
-      <DependentUpon>Modelo.aspx</DependentUpon>
+    <Compile Include="EliminarColor.aspx.cs">
+      <DependentUpon>EliminarColor.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Modelo.aspx.designer.cs">
-      <DependentUpon>Modelo.aspx</DependentUpon>
+    <Compile Include="EliminarColor.aspx.designer.cs">
+      <DependentUpon>EliminarColor.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarTapizado.aspx.cs">
+      <DependentUpon>EliminarTapizado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarTapizado.aspx.designer.cs">
+      <DependentUpon>EliminarTapizado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarCaja.aspx.cs">
+      <DependentUpon>EliminarCaja.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarCaja.aspx.designer.cs">
+      <DependentUpon>EliminarCaja.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarMarca.aspx.cs">
+      <DependentUpon>EliminarMarca.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EliminarMarca.aspx.designer.cs">
+      <DependentUpon>EliminarMarca.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Cajas.aspx.cs">
+      <DependentUpon>Cajas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Cajas.aspx.designer.cs">
+      <DependentUpon>Cajas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Colores.aspx.cs">
+      <DependentUpon>Colores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Colores.aspx.designer.cs">
+      <DependentUpon>Colores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tapizados.aspx.cs">
+      <DependentUpon>Tapizados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tapizados.aspx.designer.cs">
+      <DependentUpon>Tapizados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Marcas.aspx.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Marcas.aspx.designer.cs">
+      <DependentUpon>Marcas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Vehiculos.aspx.cs">
+      <DependentUpon>Vehiculos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Vehiculos.aspx.designer.cs">
+      <DependentUpon>Vehiculos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Modelos.aspx.cs">
+      <DependentUpon>Modelos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Modelos.aspx.designer.cs">
+      <DependentUpon>Modelos.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Contact.aspx.cs">
@@ -206,33 +343,40 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="VehiculoDelete.aspx.cs">
-      <DependentUpon>VehiculoDelete.aspx</DependentUpon>
+    <Compile Include="EliminarVehiculo.aspx.cs">
+      <DependentUpon>EliminarVehiculo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="VehiculoDelete.aspx.designer.cs">
-      <DependentUpon>VehiculoDelete.aspx</DependentUpon>
+    <Compile Include="EliminarVehiculo.aspx.designer.cs">
+      <DependentUpon>EliminarVehiculo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ModeloDelete.aspx.cs">
-      <DependentUpon>ModeloDelete.aspx</DependentUpon>
+    <Compile Include="EliminarModelo.aspx.cs">
+      <DependentUpon>EliminarModelo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ModeloDelete.aspx.designer.cs">
-      <DependentUpon>ModeloDelete.aspx</DependentUpon>
+    <Compile Include="EliminarModelo.aspx.designer.cs">
+      <DependentUpon>EliminarModelo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="VehiculoUpsert.aspx.cs">
-      <DependentUpon>VehiculoUpsert.aspx</DependentUpon>
+    <Compile Include="AgregarVehiculo.aspx.cs">
+      <DependentUpon>AgregarVehiculo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="VehiculoUpsert.aspx.designer.cs">
-      <DependentUpon>VehiculoUpsert.aspx</DependentUpon>
+    <Compile Include="AgregarVehiculo.aspx.designer.cs">
+      <DependentUpon>AgregarVehiculo.aspx</DependentUpon>
     </Compile>
-    <Compile Include="ModeloUpsert.aspx.cs">
-      <DependentUpon>ModeloUpsert.aspx</DependentUpon>
+    <Compile Include="ActualizarVehiculo.aspx.cs">
+      <DependentUpon>ActualizarVehiculo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="ModeloUpsert.aspx.designer.cs">
-      <DependentUpon>ModeloUpsert.aspx</DependentUpon>
+    <Compile Include="ActualizarVehiculo.aspx.designer.cs">
+      <DependentUpon>ActualizarVehiculo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ActualizarModelo.aspx.cs">
+      <DependentUpon>ActualizarModelo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ActualizarModelo.aspx.designer.cs">
+      <DependentUpon>ActualizarModelo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">

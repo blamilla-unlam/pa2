@@ -14,8 +14,8 @@ namespace Datos
                 .Select(s => new GridModelo {
                     ModeloID = s.ModeloID,
                     Marca = s.Marca.Nombre,
-                    Modelo = s.Nombre })
-                .OrderBy(o => new { o.Marca, o.Modelo })
+                    Nombre = s.Nombre })
+                .OrderBy(o => new { o.Marca, o.Nombre })
                 .ToList();
         }
 

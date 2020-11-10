@@ -1,9 +1,8 @@
 {
   "ExpandedNodes": [
     "",
-    "\\Concesionaria",
-    "\\Datos"
+    "\\Concesionaria"
   ],
-  "SelectedNode": "\\Concesionaria\\VehiculoUpsert.aspx",
+  "SelectedNode": "\\Concesionaria.sln",
   "PreviewInSolutionExplorer": false
 }

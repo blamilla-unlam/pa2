@@ -12,6 +12,19 @@ C:\Users\p045921\Documents\UNLaM\4 - Programacion Avanzada 2\Repo\pa2\Servicio\b
 C:\Users\p045921\Documents\UNLaM\4 - Programacion Avanzada 2\Repo\pa2\Servicio\bin\Debug\Entidades.pdb
 C:\Users\p045921\Documents\UNLaM\4 - Programacion Avanzada 2\Repo\pa2\Servicio\bin\Debug\EntityFramework.xml
 C:\Users\p045921\Documents\UNLaM\4 - Programacion Avanzada 2\Repo\pa2\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Servicio.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Servicio.pdb
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Datos.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Entidades.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\EntityFramework.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Datos.pdb
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Datos.dll.config
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Entidades.pdb
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\EntityFramework.xml
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.csproj.CopyComplete
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.dll
+C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.pdb
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Servicio.dll
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Servicio.pdb
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Datos.dll
@@ -26,16 +39,3 @@ C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servic
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.csproj.CopyComplete
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.dll
 C:\Users\brian.lamilla\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.pdb
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Servicio.dll
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Servicio.pdb
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Datos.dll
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Entidades.dll
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\EntityFramework.dll
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Datos.pdb
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Datos.dll.config
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\Entidades.pdb
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\bin\Debug\EntityFramework.xml
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.csprojAssemblyReference.cache
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.csproj.CopyComplete
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.dll
-C:\Users\Usuario\Source\Repos\blamilla-unlam\pa2\Servicio\obj\Debug\Servicio.pdb

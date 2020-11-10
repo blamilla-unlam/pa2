@@ -41,6 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorService.cs" />
+    <Compile Include="TapizadoService.cs" />
+    <Compile Include="CajaService.cs" />
     <Compile Include="MarcaService.cs" />
     <Compile Include="VehiculoService.cs" />
     <Compile Include="ModeloService.cs" />

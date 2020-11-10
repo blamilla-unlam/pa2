@@ -13,16 +13,16 @@ namespace Datos
             return Contexto.Vehiculo
                 .Select(s => new GridVehiculo {
                     VehiculoID = s.VehiculoID,
-                    ModeloID = s.ModeloID,
-                    MarcaID = s.Modelo.MarcaID,
+                    Modelo = s.Modelo.Nombre,
+                    Marca = s.Modelo.Marca.Nombre,
                     NumeroChasis = s.NumeroChasis,
                     NumeroCarroceria = s.NumeroCarroceria,
                     Patente = s.Patente,
                     NumeroPuertas = s.NumeroPuertas,
-                    ColorID = s.ColorID,
-                    CajaID = s.CajaID,
+                    Color = s.Color.Nombre,
+                    Caja = s.Caja.Nombre,
                     Cilindrada = s.Cilindrada,
-                    TapizadoID = s.TapizadoID })
+                    Tapizado = s.Tapizado.Nombre })
                 .OrderBy(o => new { o.NumeroChasis, o.NumeroCarroceria })
                 .ToList();
         }
@@ -78,16 +78,15 @@ namespace Datos
         public void Insertar(Vehiculo Vehiculo)
         {
             var vehiculo = new ORM.Vehiculo();
-            vehiculo.Modelo.MarcaID = Vehiculo.MarcaID;
-            //vehiculo.ModeloID = Vehiculo.ModeloID;
-            //vehiculo.NumeroChasis = Vehiculo.NumeroChasis;
-            //vehiculo.NumeroCarroceria = Vehiculo.NumeroCarroceria;
-            //vehiculo.Patente = Vehiculo.Patente;
-            //vehiculo.NumeroPuertas = Vehiculo.NumeroPuertas;
-            //vehiculo.Color = Vehiculo.Color;
-            //vehiculo.Caja = Vehiculo.Caja;
-            //vehiculo.Cilindrada = Vehiculo.Cilindrada;
-            //vehiculo.Tapizado = Vehiculo.Tapizado;
+            vehiculo.ModeloID = Vehiculo.ModeloID;
+            vehiculo.NumeroChasis = Vehiculo.NumeroChasis;
+            vehiculo.NumeroCarroceria = Vehiculo.NumeroCarroceria;
+            vehiculo.Patente = Vehiculo.Patente;
+            vehiculo.NumeroPuertas = Vehiculo.NumeroPuertas;
+            vehiculo.ColorID = Vehiculo.ColorID;
+            vehiculo.CajaID = Vehiculo.CajaID;
+            vehiculo.Cilindrada = Vehiculo.Cilindrada;
+            vehiculo.TapizadoID = Vehiculo.TapizadoID;
 
             Contexto.Vehiculo.Add(vehiculo);
             Contexto.SaveChanges();

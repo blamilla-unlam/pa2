@@ -48,6 +48,10 @@
     <Compile Include="Vehiculo.cs" />
     <Compile Include="Modelo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Vistas\GridColor.cs" />
+    <Compile Include="Vistas\GridTapizado.cs" />
+    <Compile Include="Vistas\GridCaja.cs" />
+    <Compile Include="Vistas\GridMarca.cs" />
     <Compile Include="Vistas\GridVehiculo.cs" />
     <Compile Include="Vistas\GridModelo.cs" />
   </ItemGroup>

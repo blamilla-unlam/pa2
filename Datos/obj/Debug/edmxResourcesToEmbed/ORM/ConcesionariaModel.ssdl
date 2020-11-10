@@ -40,7 +40,7 @@
     <Key>
       <PropertyRef Name="VehiculoID" />
     </Key>
-    <Property Name="VehiculoID" Type="int" Nullable="false" />
+    <Property Name="VehiculoID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="ModeloID" Type="int" Nullable="false" />
     <Property Name="NumeroChasis" Type="int" Nullable="false" />
     <Property Name="NumeroCarroceria" Type="int" Nullable="false" />

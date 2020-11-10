@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Connection.cs" />
+    <Compile Include="ColorDAO.cs" />
+    <Compile Include="TapizadoDAO.cs" />
+    <Compile Include="CajaDAO.cs" />
     <Compile Include="MarcaDAO.cs" />
     <Compile Include="ORM\Caja.cs">
       <DependentUpon>ConcesionariaModel.tt</DependentUpon>
