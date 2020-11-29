@@ -61,7 +61,7 @@ namespace Concesionaria
                     ddlModelo.Items.FindByValue(Vehiculo.ModeloID.ToString()).Selected = true;
                     txtChasis.Text = Vehiculo.NumeroChasis.ToString();
                     txtCarroceria.Text = Vehiculo.NumeroCarroceria.ToString();
-                    txtPatente.Text = Vehiculo.Patente.ToString();
+                    ucPatente.Valor = Vehiculo.Patente.ToString();
                     txtPuertas.Text = Vehiculo.NumeroPuertas.ToString();
                     ddlCaja.Items.FindByValue(Vehiculo.CajaID.ToString()).Selected = true;
                     ddlColor.Items.FindByValue(Vehiculo.ColorID.ToString()).Selected = true;
@@ -83,7 +83,7 @@ namespace Concesionaria
                 Vehiculo.ModeloID = int.Parse(ddlModelo.SelectedValue);
                 Vehiculo.NumeroChasis = int.Parse(txtChasis.Text);
                 Vehiculo.NumeroCarroceria = int.Parse(txtCarroceria.Text);
-                Vehiculo.Patente = txtPatente.Text;
+                Vehiculo.Patente = ucPatente.Valor;
                 Vehiculo.NumeroPuertas = short.Parse(txtPuertas.Text);
                 Vehiculo.ColorID = int.Parse(ddlColor.SelectedValue);
                 Vehiculo.CajaID = int.Parse(ddlCaja.SelectedValue);
@@ -99,7 +99,7 @@ namespace Concesionaria
                 Vehiculo.ModeloID = int.Parse(ddlModelo.SelectedValue);
                 Vehiculo.NumeroChasis = int.Parse(txtChasis.Text);
                 Vehiculo.NumeroCarroceria = int.Parse(txtCarroceria.Text);
-                Vehiculo.Patente = txtPatente.Text;
+                Vehiculo.Patente = ucPatente.Valor;
                 Vehiculo.NumeroPuertas = short.Parse(txtPuertas.Text);
                 Vehiculo.ColorID = int.Parse(ddlColor.SelectedValue);
                 Vehiculo.CajaID = int.Parse(ddlCaja.SelectedValue);

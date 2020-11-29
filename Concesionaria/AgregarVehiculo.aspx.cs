@@ -68,6 +68,11 @@ namespace Concesionaria
 
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
+            if (!Page.IsValid)
+            {
+                return;
+            }
+
             getVehiculoID();
 
             Entidades.Vehiculo Vehiculo = new Entidades.Vehiculo();
@@ -76,7 +81,7 @@ namespace Concesionaria
             Vehiculo.ModeloID = int.Parse(ddlModelo.SelectedValue);
             Vehiculo.NumeroChasis = int.Parse(txtChasis.Text);
             Vehiculo.NumeroCarroceria = int.Parse(txtCarroceria.Text);
-            Vehiculo.Patente = txtPatente.Text;
+            Vehiculo.Patente = ucPatente.Valor;
             Vehiculo.NumeroPuertas = short.Parse(txtPuertas.Text);
             Vehiculo.ColorID = int.Parse(ddlColor.SelectedValue);
             Vehiculo.CajaID = int.Parse(ddlCaja.SelectedValue);

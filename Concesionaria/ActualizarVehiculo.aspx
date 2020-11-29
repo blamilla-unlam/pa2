@@ -1,5 +1,7 @@
 ﻿<%@ Page Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ActualizarVehiculo.aspx.cs" Inherits="Concesionaria.ActualizarVehiculo" %>
 
+<%@ Register Src="~/Customize/ucPatente.ascx" TagPrefix="uc1" TagName="ucPatente" %>
+
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <h2 class="titulo-pagina">Vehículos - Actualización</h2>
     <div class="form-group col-sm-12">
@@ -32,8 +34,9 @@
         <h5 class="col-sm-4">
             <asp:Label ID="lblPatente" runat="server">Número de Patente</asp:Label>
         </h5>
-        <asp:TextBox ID="txtPatente" runat="server" MaxLength="7" CssClass="form-control col-sm-8"></asp:TextBox>
-        <asp:RequiredFieldValidator ID="rfvPatente" runat="server" ErrorMessage="Campo obligatorio" ControlToValidate="txtPatente" ForeColor="#CC0000"></asp:RequiredFieldValidator>
+        <%--<asp:TextBox ID="txtPatente" runat="server" MaxLength="7" CssClass="form-control col-sm-8"></asp:TextBox>
+        <asp:RequiredFieldValidator ID="rfvPatente" runat="server" ErrorMessage="Campo obligatorio" ControlToValidate="txtPatente" ForeColor="#CC0000"></asp:RequiredFieldValidator>--%>
+        <uc1:ucPatente runat="server" id="ucPatente" CssClass="col-sm-8"/>
     </div>
     <div class="form-group col-sm-12">
         <h5 class="col-sm-4">

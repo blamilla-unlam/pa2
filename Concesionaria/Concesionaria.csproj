@@ -120,6 +120,7 @@
     <Content Include="AgregarTapizado.aspx" />
     <Content Include="AgregarCaja.aspx" />
     <Content Include="AgregarMarca.aspx" />
+    <Content Include="Customize\ucPatente.ascx" />
     <Content Include="EliminarColor.aspx" />
     <Content Include="EliminarTapizado.aspx" />
     <Content Include="EliminarCaja.aspx" />
@@ -255,6 +256,13 @@
     </Compile>
     <Compile Include="AgregarModelo.aspx.designer.cs">
       <DependentUpon>AgregarModelo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Customize\ucPatente.ascx.cs">
+      <DependentUpon>ucPatente.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Customize\ucPatente.ascx.designer.cs">
+      <DependentUpon>ucPatente.ascx</DependentUpon>
     </Compile>
     <Compile Include="EliminarColor.aspx.cs">
       <DependentUpon>EliminarColor.aspx</DependentUpon>

@@ -7,18 +7,27 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Concesionaria {
+namespace Concesionaria.Customize {
     
     
-    public partial class SiteMaster {
+    public partial class ucPatente {
         
         /// <summary>
-        /// Control MainContent.
+        /// Control txtPatente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder MainContent;
+        protected global::System.Web.UI.WebControls.TextBox txtPatente;
+        
+        /// <summary>
+        /// Control rfvPatente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator rfvPatente;
     }
 }
