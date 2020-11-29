@@ -128,6 +128,7 @@
     <Content Include="AgregarModelo.aspx" />
     <Content Include="Cajas.aspx" />
     <Content Include="Colores.aspx" />
+    <Content Include="Images\background.jpg" />
     <Content Include="Tapizados.aspx" />
     <Content Include="Marcas.aspx" />
     <Content Include="Vehiculos.aspx" />

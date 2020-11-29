@@ -11,6 +11,8 @@ namespace Concesionaria
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            errorContenedor.Visible = false;
+
             if (!IsPostBack)
             {
                 if (obtenerTapizadoID())
@@ -24,9 +26,17 @@ namespace Concesionaria
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             obtenerTapizadoID();
-            ServicioTapizado.Eliminar(TapizadoID);
 
-            Response.Redirect("Tapizados.aspx");
+            try
+            {
+                ServicioTapizado.Eliminar(TapizadoID);
+                Response.Redirect("Tapizados.aspx");
+            }
+            catch (Exception)
+            {
+                errorContenedor.Visible = true;
+                lblMensajeError.Text = "El tapizado seleccionado no puede ser eliminado debido a que se encuentra relacionado a un elemento existente.";
+            }            
         }
 
         private bool obtenerTapizadoID()

@@ -2,6 +2,8 @@
 body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background: linear-gradient(0deg, rgb(0 0 0 / 0.79), rgb(0 0 0 / 79%)), url(../Images/background.jpg);
+    background-position: center;
 }
 
 /* Wrapping element */
@@ -18,6 +20,59 @@ textarea {
     max-width: 280px;
 }
 
+.body-content .form-group {
+    display: flex;
+    align-items: center;
+}
+
+    .body-content .form-group .col-sm-4 span {
+        color: #ffffff;
+    }
+
+.titulo-pagina {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.mensaje-contenedor,
+.botones-contenedor,
+.error-contenedor {
+    margin-top: 20px;
+}
+
+.home-contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.home-contenedor .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.home-menu-item-contenedor {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 250px;
+    border: 0px solid;
+    padding: 100px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 15px 5px rgba(179,179,179,1);
+    -moz-box-shadow: 0px 0px 15px 5px rgba(179,179,179,1);
+    box-shadow: 0px 0px 15px 5px rgba(179,179,179,1);
+    cursor: pointer;
+    background: #ffffff;
+}
+
+    .home-menu-item-contenedor a {
+        font-size: 20pt;
+        font-weight: bold;
+        color: black;
+    }
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {

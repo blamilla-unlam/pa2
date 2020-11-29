@@ -11,6 +11,8 @@ namespace Concesionaria
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            errorContenedor.Visible = false;
+
             if (!IsPostBack)
             {
                 if (obtenerModeloID())
@@ -24,9 +26,17 @@ namespace Concesionaria
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             obtenerModeloID();
-            ServicioModelo.Eliminar(ModeloID);
 
-            Response.Redirect("Modelos.aspx");
+            try
+            {
+                ServicioModelo.Eliminar(ModeloID);
+                Response.Redirect("Modelos.aspx");
+            }
+            catch (Exception)
+            {
+                errorContenedor.Visible = true;
+                lblMensajeError.Text = "El modelo seleccionado no puede ser eliminado debido a que se encuentra relacionado a un elemento existente.";
+            }            
         }
 
         private bool obtenerModeloID()

@@ -11,6 +11,8 @@ namespace Concesionaria
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            errorContenedor.Visible = false;
+
             if (!IsPostBack)
             {
                 if (obtenerColorID())
@@ -24,9 +26,17 @@ namespace Concesionaria
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             obtenerColorID();
-            ServicioColor.Eliminar(ColorID);
 
-            Response.Redirect("Colores.aspx");
+            try
+            {
+                ServicioColor.Eliminar(ColorID);
+                Response.Redirect("Colores.aspx");
+            }
+            catch (Exception)
+            {
+                errorContenedor.Visible = true;
+                lblMensajeError.Text = "El color seleccionado no puede ser eliminado debido a que se encuentra relacionado a un elemento existente.";
+            }           
         }
 
         private bool obtenerColorID()

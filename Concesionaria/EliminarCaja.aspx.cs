@@ -11,6 +11,8 @@ namespace Concesionaria
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            errorContenedor.Visible = false;
+
             if (!IsPostBack)
             {
                 if (obtenerCajaID())
@@ -24,9 +26,17 @@ namespace Concesionaria
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             obtenerCajaID();
-            ServicioCaja.Eliminar(CajaID);
 
-            Response.Redirect("Cajas.aspx");
+            try
+            {
+                ServicioCaja.Eliminar(CajaID);
+                Response.Redirect("Cajas.aspx");
+            }
+            catch (Exception)
+            {
+                errorContenedor.Visible = true;
+                lblMensajeError.Text = "La caja seleccionada no puede ser eliminada debido a que se encuentra relacionada a un elemento existente.";
+            }
         }
 
         private bool obtenerCajaID()

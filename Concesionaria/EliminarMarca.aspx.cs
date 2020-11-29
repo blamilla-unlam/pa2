@@ -11,6 +11,8 @@ namespace Concesionaria
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            errorContenedor.Visible = false;
+
             if (!IsPostBack)
             {
                 if (obtenerMarcaID())
@@ -24,9 +26,17 @@ namespace Concesionaria
         protected void btnGuardar_Click(object sender, EventArgs e)
         {
             obtenerMarcaID();
-            ServicioMarca.Eliminar(MarcaID);
 
-            Response.Redirect("Marcas.aspx");
+            try
+            {
+                ServicioMarca.Eliminar(MarcaID);
+                Response.Redirect("Marcas.aspx");
+            }
+            catch (Exception)
+            {
+                errorContenedor.Visible = true;
+                lblMensajeError.Text = "La marca seleccionada no puede ser eliminada debido a que se encuentra relacionada a un elemento existente.";
+            }            
         }
 
         private bool obtenerMarcaID()

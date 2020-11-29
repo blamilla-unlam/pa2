@@ -1,9 +1,9 @@
 ﻿<%@ Page Title="Vehículos" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Vehiculos.aspx.cs" Inherits="Concesionaria.Vehiculos" %>
 
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
-    <h2><%: Title %></h2>
-    <asp:GridView ID="GridVehiculos" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None">
-        <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
+    <h2 class="titulo-pagina"><%: Title %></h2>
+    <asp:GridView ID="GridVehiculos" runat="server" AutoGenerateColumns="False" CellPadding="4" ForeColor="#333333" GridLines="None" CssClass="table table-striped">
+        <AlternatingRowStyle BackColor="#F7F6F3" ForeColor="#284775" />
         <Columns>            
             <asp:TemplateField ItemStyle-Width="600px" HeaderText="Marca">  
                 <ItemTemplate>  
@@ -95,14 +95,14 @@
                 </EditItemTemplate>  
                 <ItemStyle Width="300px"></ItemStyle>
             </asp:TemplateField> 
-            <asp:BoundField DataField="VehiculoID" HtmlEncode="False" DataFormatString="<a href='ActualizarVehiculo.aspx?vehiculoid={0}'><img src='Icons/Edit.png' width='25px' height='25px'/></a>" />            
-            <asp:BoundField DataField="VehiculoID" HtmlEncode="False" DataFormatString="<a href='EliminarVehiculo.aspx?vehiculoid={0}'><img src='Icons/Delete.png' width='25px' height='25px'/></a>" />            
+            <asp:BoundField DataField="VehiculoID" HtmlEncode="False" DataFormatString="<a href='ActualizarVehiculo.aspx?vehiculoid={0}'><span class='glyphicon glyphicon-pencil'></span></a>" />            
+            <asp:BoundField DataField="VehiculoID" HtmlEncode="False" DataFormatString="<a href='EliminarVehiculo.aspx?vehiculoid={0}'><span class='glyphicon glyphicon-trash'></span></a>" />            
         </Columns>
         <EditRowStyle BackColor="#999999" />
         <FooterStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
-        <HeaderStyle BackColor="#5D7B9D" Font-Bold="True" ForeColor="White" />
+        <HeaderStyle BackColor="#FFFFFF" Font-Bold="True" ForeColor="Black" />
         <PagerStyle BackColor="#284775" ForeColor="White" HorizontalAlign="Center" />
-        <RowStyle BackColor="#F7F6F3" ForeColor="#333333" />
+        <RowStyle BackColor="#d9edf7" ForeColor="#333333" />
         <SelectedRowStyle BackColor="#E2DED6" Font-Bold="True" ForeColor="#333333" />
         <SortedAscendingCellStyle BackColor="#E9E7E2" />
         <SortedAscendingHeaderStyle BackColor="#506C8C" />
@@ -110,7 +110,6 @@
         <SortedDescendingHeaderStyle BackColor="#6F8DAE" />
     </asp:GridView>
     <div>
-        <br />
-        <asp:Button ID="btnNuevo" runat="server" Text="Nuevo Vehículo" OnClick="btnNuevo_Click"/>
+        <asp:Button ID="btnNuevo" runat="server" Text="Nuevo Vehículo" OnClick="btnNuevo_Click" CssClass="btn btn-primary" />
     </div>
 </asp:Content>
